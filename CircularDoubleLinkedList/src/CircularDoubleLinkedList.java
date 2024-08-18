@@ -105,7 +105,7 @@ public class CircularDoubleLinkedList {
 
     public void insert(int data){
         Node newNode = new Node(data);
-        if (this.sentinel.next.data - data <= this.sentinel.previous.data - data){
+        if (data - this.sentinel.next.data <= this.sentinel.previous.data - data){
             Node aux = this.sentinel.next;
             while (data > aux.next.data){
                 aux = aux.next;
