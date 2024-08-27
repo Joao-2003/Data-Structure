@@ -26,6 +26,8 @@ public class Main {
                 // Inserindo a pessoa no deque apropriado
                 if (person.priority == 3) {
                     deque1.insertLast(person);
+                } else if (person.priority == 2) {
+                    deque2.insertFirst(person);
                 } else {
                     deque2.insertLast(person);
                 }
